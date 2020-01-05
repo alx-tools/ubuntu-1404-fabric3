@@ -45,9 +45,9 @@ RUN apt-get install -y python3.4-dev
 RUN apt-get install -y libpython3-dev
 RUN pip3 install pyparsing
 RUN pip3 install appdirs
-RUN pip3 install --upgrade setuptools
+RUN pip3 install setuptools==40.1.0
 RUN pip3 install cryptography
-RUN pip3 install Fabric3
+RUN pip3 install Fabric3==1.14.post1
 
 
 # SSH
