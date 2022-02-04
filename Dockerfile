@@ -1,9 +1,12 @@
 FROM holbertonschool/ubuntu-1404-python3
 MAINTAINER Guillaume Salva <guillaume@holbertonschool.com>
 
+RUN apt-get update
+
 # Fabric 3
 RUN apt-get install -y libffi-dev
 RUN apt-get install -y libssl-dev
+RUN apt-get install -y build-essential
 RUN apt-get install -y python3.4-dev
 RUN apt-get install -y libpython3-dev
 RUN pip3 install pyparsing
