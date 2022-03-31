@@ -15,8 +15,8 @@ RUN pip3 install setuptools==40.1.0
 RUN pip3 install cryptography==2.8
 RUN pip3 install Fabric3==1.14.post1
 
-ADD run.sh /tmp/run.sh
-RUN chmod u+x /tmp/run.sh
+ADD run.sh /etc/sandbox_run.sh
+RUN chmod u+x /etc/sandbox_run.sh
 
 # start run!
-CMD ["./tmp/run.sh"]
+CMD ["./etc/sandbox_run.sh"]
